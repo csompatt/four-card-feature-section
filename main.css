@@ -1,8 +1,8 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   width: 100vw;
   height: 100vh;
   background-color: white;
@@ -10,99 +10,175 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-h1, p{
+h1,
+.paragraph-fpart {
+  font-weight: 200;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+}
+
+.paragraph-card {
   font-weight: 400;
 }
 
-h1{
+p {
+  font-size: 2vh
+}
+
+h1 {
   color: hsl(234, 12%, 34%);
 }
 
-p{
+p {
   color: hsl(229, 6%, 66%);
 }
 
-h2, h3{
-  font-weight: 400;
+h2,
+h3 {
   color: black;
 }
 
-.card{
+h3 {
+  font-size: 3vh;
+  margin-bottom: 5%;
+}
+
+.card {
   position: relative;
   border-radius: 4px;
-  border-left: 1px solid hsl(0, 0%, 98%);
-  border-bottom: 1px solid hsl(0, 0%, 98%);
-  border-right: 1px solid hsl(0, 0%, 98%);
+  border: 1px solid hsl(0, 0%, 98%);
   box-shadow: 5px 10px 15px hsla(236, 100%, 50%, 5%), -5px 10px 15px hsla(236, 100%, 50%, 5%);
 }
-.supervisor{
+
+.supervisor {
   border-top: 4px solid hsl(180, 62%, 55%);
 }
 
-.team-builder{
+.team-builder {
   border-top: 4px solid hsl(0, 78%, 62%);
 }
 
-.karma{
+.karma {
   border-top: 4px solid hsl(34, 97%, 64%);
 }
 
-.calculator{
+.calculator {
   border-top: 4px solid hsl(212, 86%, 64%);
 }
-img{
+
+img {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 10%;
+  right: 10%;
 }
 
-#first-part{
+#first-part,
+#second-part {
   margin: 0 auto;
+}
+
+#first-part,
+.attribution {
   text-align: center;
 }
-@media (max-width: 375px){
-  #first-part{
+
+@media (max-width: 375px) {
+  #first-part {
     width: 85%;
     margin-top: 10%;
     margin-bottom: 10%;
-    text-align: center;
   }
-  #second-part{
+  #second-part {
     width: 85%;
-    margin: 0 auto;
   }
-
-  .card{
+  .card {
     width: 100%;
     height: 220px;
     margin-bottom: 10%;
-    padding-left: 5%;
-    padding-top: 5%;
+    padding: 5% 0 0 5%;
   }
-  h1, p{
+  h1,
+  p {
     line-height: 1.5rem;
     letter-spacing: .05rem;
   }
-  
-  h2{
+  h2 {
     margin: 5% auto 5% auto;
-    font-size: 3.9vh;
+    font-size: 3.5vh;
+    letter-spacing: .05rem;
   }
-  
-  h1{
+  h1 {
     font-size: 3.5vh;
   }
-  
-  p{
-    font-size: 2vh;
-  }
-  
-  h3{
-    font-size: 3vh;
-    margin-bottom: 5%;
-  }
-  .paragraph-card{
+  .paragraph-card {
     width: 85%;
     font-size: 1.8vh;
+  }
+  img {
+    width: 18vw;
+    height: auto;
+  }
+  .attribution {
+    font-size: 1.5vh;
+  }
+}
+
+@media (min-width: 376px) {
+  #second-part,
+  .first-card,
+  .second-card,
+  .third-card {
+    display: flex;
+  }
+  #first-part {
+    padding: 2% 0 3% 0;
+  }
+  h2 {
+    padding: 1% 0 1% 0;
+  }
+  #second-part {
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+  .first-card,
+  .second-card,
+  .third-card {
+    width: 25%;
+    align-items: center;
+  }
+  .second-card {
+    flex-direction: column;
+    margin: 0 3% 0 3%;
+  }
+  .team-builder {
+    margin-bottom: 3%;
+  }
+  .karma {
+    margin-top: 3%;
+  }
+  .card {
+    width: 100%;
+    height: 35vh;
+    padding: 10%;
+  }
+  img {
+    width: 5vw;
+    height: auto;
+  }
+  h1,
+  h2 {
+    font-size: 5vh;
+    letter-spacing: .05rem;
+  }
+  .paragraph-fpart {
+    width: 35vw;
+    margin: 0 auto;
+    line-height: 1.2rem;
+  }
+  .paragraph-card {
+    line-height: 1.2rem;
   }
 }
